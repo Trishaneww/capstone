@@ -1,0 +1,39 @@
+@use "../../styles/partials//mixins" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles//partials/colors" as *;
+@use "../../styles/partials/paddings" as *;
+
+.navbar {
+    position: fixed;
+    bottom:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4em;
+    width:100%;
+    padding-bottom: 2em;
+    z-index: 1;
+    background-color: rgb(41, 27, 18);
+
+    @include desktop {
+        flex-direction: column;
+        left:0;
+        height:100vh;
+        width:5%;
+    }
+
+    &-icon {
+       text-decoration: none;
+       color:rgb(205,196,170);
+       margin: 0 9% 0 9%;
+
+       &:hover {
+        cursor:pointer;
+       }
+       
+       @include desktop {
+            margin: 55% 3% 55% 3%;
+       }
+    }
+
+}
