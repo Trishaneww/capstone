@@ -1,0 +1,22 @@
+@use "../../styles/partials//mixins" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles//partials/colors" as *;
+@use "../../styles/partials/paddings" as *;
+
+
+.flashcard {
+    background-color: rgb(205,196,170);
+    text-align: center;
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    padding:1em;
+    margin:2% 0;
+
+
+    &-delete {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

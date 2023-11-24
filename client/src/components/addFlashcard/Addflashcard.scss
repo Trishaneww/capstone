@@ -1,0 +1,42 @@
+@use "../../styles/partials//mixins" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles//partials/colors" as *;
+@use "../../styles/partials/paddings" as *;
+
+
+.add-form {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:70%;
+    padding: 0.5em;
+    margin-bottom: 10%;
+    border-radius: 10px;
+    background-color: rgb(205,196,170);
+
+    &__input-fields {
+        width:100%;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    &__input {
+        width: 80%;
+        margin: 2% 3%;
+        height: 2.5em;
+        padding-left: 1em;
+        outline:none;
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+        border-bottom: 2px solid rgb(255, 255, 255);
+    }
+
+    &-btn {
+        height:35px;
+        border-radius: 10px;
+        border:none;
+        outline:none;
+    }
+}

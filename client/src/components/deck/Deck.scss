@@ -1,0 +1,24 @@
+@use "../../styles/partials//mixins" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles//partials/colors" as *;
+@use "../../styles/partials/paddings" as *;
+
+.deck {
+    color:black;
+    background-color: rgb(205,196,170);
+    border-radius: 10px;
+    width:90%;
+    padding:0 0.5em;
+    margin-left:3%;
+
+    &-nav {
+        display: flex;
+        align-items: center;
+        width:100%;
+    }
+
+    &-delete {
+        position: absolute;
+        right: 40px;
+    }
+}

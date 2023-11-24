@@ -1,0 +1,41 @@
+@use "../../styles/partials//mixins" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles//partials/colors" as *;
+@use "../../styles/partials/paddings" as *;
+
+
+.newdeck-form {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        color:white;
+    }
+
+    &__input, &__descr {
+        padding-left:1em;
+        outline:none;
+        height:40px;
+        border-radius: 10px;
+        width: 90%;
+        border:none;
+        background-color:rgb(205,196,170);
+        margin: 3% 0;
+    }
+
+    &__descr {
+        height: 100px;
+    }
+
+    &__btn {
+        width:40%;
+        border-radius:10px;
+        background-color:white;
+        height:40px;
+        border:none;
+    }
+}
+
+

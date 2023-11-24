@@ -1,0 +1,207 @@
+@use "./partials/mixins" as *;
+@use "./partials/variables" as *;
+@use "./partials/colors" as *;
+@use "./partials/paddings" as *;
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    overflow-x: hidden;
+    background-color: rgb(41, 27, 18);
+}
+
+
+.login-page {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top:20%;
+    color:rgb(205,196,170);
+
+    & img {
+        width: 30%;
+    }
+
+    &__fields {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 5%;
+        width: 100%;
+        
+        input {
+            width: 60%;
+            height: 2.5em;
+            padding-left: 1em;
+            outline:none;
+            border: none;
+            color:rgb(205,196,170);
+            background-color: rgba(255, 255, 255, 0);
+            border-bottom: 2px solid rgb(205,196,170);
+            margin-top:3%;
+        }
+    }
+
+    &-btn {
+        width: 60%;
+        padding: 1em;
+        height:3em;
+        border-radius: 5px;
+        background-color: rgb(205,196,170);
+        border:none;
+        color:white;
+    }
+}
+
+
+
+// .maincontainer {
+//     position:relative;
+//     width: 70%;
+//     height: 10em;
+//     border-radius: 15px;
+//     background-color: rgb(177, 177, 255);
+//     margin-bottom: 5%;
+// }
+
+// .card {
+//     position: absolute;
+//     width:100%;
+//     height: 100%;
+//     transform-style: preserve-3d;
+//     transition: all 0.5s ease;
+// }
+
+
+// .front {
+//     position: absolute;
+//     display:flex;
+//     justify-content: center;
+//     align-items: center;
+//     width:100%;
+//     height: 100%;
+//     backface-visibility: hidden;
+// }
+
+// .back {
+//     position: absolute;
+//     display:flex;
+//     justify-content: center;
+//     align-items: center;
+//     width:100%;
+//     height: 100%;
+//     backface-visibility: hidden;
+//     transition: all 0.5s ease;
+//     background-color: white;
+//     transform: rotateX(180deg)
+// }
+
+// .card:hover {
+//     transform: rotateX(180deg)
+// }
+
+
+.flashcard-container {
+    margin-bottom: 40%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-nav {
+        display:flex;
+        width:60%;
+        justify-content: space-between;
+    }
+
+    &__arrows-container {
+        display:flex;
+        align-items: center;
+        color:white;
+
+
+        &-arrow {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:40px;
+            height:40px;
+            border-radius: 50%;
+            border: 2px solid white;
+            transition: 200ms;
+            margin: 0 15px;
+        
+            &:hover {
+                cursor: pointer;
+                background-color: rgb(205,196,170);
+            }
+        }
+    }
+}
+
+.deck-details {
+    color:white;
+}
+
+input::placeholder {
+    color:white
+}
+
+
+.matching-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:white;
+
+    &__questions {
+        display:flex;
+        justify-content: right;
+        align-items: center;
+
+        
+        input {
+            background-color:rgb(205,196,170);
+            border:none;
+            outline:none;
+            border-radius: 5px;
+            height:50px;
+            margin-right:5%;
+        }
+    }
+
+    &__answerbank {
+        padding:1em;
+        background-color:rgb(205,196,170);
+        border-radius: 5px;
+        width:90%;
+        display:flex;
+        flex-wrap:wrap;
+    }
+
+    &__answer {
+        font-size: 14px;
+        border: 1.5px solid white;
+        border-radius: 10px;
+        margin: 2% 3%;
+        padding:0 0.5em;
+        cursor: pointer;
+    }
+}
+
+
+.review-deck {
+    color:black;
+    padding:0 0.5em;
+    border-radius:5px;
+    display:flex;
+    align-items: center;
+    width:150px;
+    background-color:rgb(205,196,170);
+
+    &-icon {
+        margin-right: 5%;
+    }
+}
